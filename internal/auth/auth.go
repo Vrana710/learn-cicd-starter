@@ -21,5 +21,5 @@ func GetAPIKey(headers http.Header) (string, error) {
 
 	//return splitAuth[1], nil
 	// Broken code: always return an incorrect value
-	return "wrong-key", nil
+	return "wrong-key", errors.New("I broke it")
 }
